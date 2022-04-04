@@ -1,0 +1,18 @@
+{
+  "label": {
+    "action": "In andere Sprachen kopieren",
+    "dialogTitle": "“{{propertyName}}” in andere Sprachen kopieren",
+    "languagesSelected": "{{count}} Sprache ausgewählt",
+    "languagesSelected_plural": "{{count}} Sprachen ausgewählt",
+    "dialogDescription": "Der Inhalt von diesem Feld wird in alle anderen Sprachen kopiert.",
+    "filterLanguages": "Sprachen filtern",
+    "noResults": "Kein Ergebnis",
+    "addAll": "Alle hinzufügen",
+    "removeAll": "Alle Entfernen",
+    "lock": "Inhalt ist in dieser Sprache gesperrt",
+    "copy": "Kopieren",
+    "cancel": "Abbrechen",
+    "errorTitle": "Operation nicht verfügbar.",
+    "errorContent": "Ein Fehler ist aufgetreten beim kopieren von “{{property}}”. Stellen Sie sicher das der Inhalt nicht gesperrt ist und Sie die notwendigen Rechte besitzen."
+  }
+}
