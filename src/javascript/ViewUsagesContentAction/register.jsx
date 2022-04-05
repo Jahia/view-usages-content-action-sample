@@ -6,7 +6,7 @@ import {ViewUsagesActionComponent} from "./ViewUsagesActionComponent";
 export default () => {
     registry.add('action', 'viewUsagesContentAction', {
         buttonIcon: <Visibility/>,
-        buttonLabel: 'view-usages-content-action:label.action',
+        buttonLabel: 'view-usages-content-action-sample:label.action',
         showOnNodeTypes: ['jnt:file'],
         targets: ['contentActions:0'],
         component: ViewUsagesActionComponent

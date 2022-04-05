@@ -5,21 +5,21 @@ import {useNodeChecks} from '@jahia/data-helper';
 import {useSelector} from 'react-redux';
 
 export const ViewUsagesActionComponent = ({path, render: Render, loading: Loading, ...otherProps})  => {
-    const {language, uilang, site} = useSelector(state => ({language: state.language, site: state.site, uilang: state.uilang}));
+    const {language} = useSelector(state => ({language: state.language, site: state.site, uilang: state.uilang}));
     const res = useNodeChecks(
         {path: path, language: language},
         {...otherProps}
     );
 
     // Load namespace
-    useTranslation('view-usages-content-action');
+    useTranslation('view-usages-content-action-sample');
 
     return (
         <Render
             {...otherProps}
             isVisible={res.checksResult}
             onClick={() => {
-                window.parent.authoringApi.editContent(path, res.node.name, ['jnt:file'],["jnt:text"], res.node.uuid, false, {hideWip:true, displayedTabs: ["usages"], hideHeaders:true})
+                window.parent.authoringApi.editContent(path, res.node.name, ['jnt:file'],[], res.node.uuid, false, {hideWip:true, displayedTabs: ["usages"], hideHeaders:true})
             }}
         />
     );
