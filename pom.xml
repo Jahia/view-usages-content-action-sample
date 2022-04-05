@@ -49,7 +49,6 @@
                 <extensions>true</extensions>
                 <configuration>
                     <instructions>
-                        <Jahia-Depends>content-editor=3.5.0</Jahia-Depends>
                     </instructions>
                 </configuration>
             </plugin>
